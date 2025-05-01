@@ -13,9 +13,9 @@ const onRenderClient: OnRenderClientAsync = async (pageContext): ReturnType<OnRe
   
   const page = () => {
     setPageContext(pageContext)
-    return Layout({ pageContext, Page });    
+    return Layout({ pageContext, Page })
   };
-  const container = document.getElementById('root')!;
+  const container = document.getElementById('root')!
   van.hydrate(container, (dom) => hydrate(dom, [page()]))
 
   document.title = getPageTitle(pageContext)

@@ -43,13 +43,7 @@ function Sidebar( ...children: ChildDom[]) {
   return div(
     {
       id: "sidebar",
-      style: `
-        padding: 20px;
-        display: flex;
-        flex-shrink: 0;
-        flex-direction:
-        column; line-height: 1.8em;
-        border-right: 2px solid #eee`
+      style: "padding: 20px; display: flex; flex-shrink: 0; flex-direction: column; line-height: 1.8em; border-right: 2px solid #eee"
     },
     ...children
   );
@@ -59,11 +53,7 @@ function Content(...children: ChildDom[]) {
   return div({ id:"page-container" },
       div({
         id: "page-content",
-        style: `
-          padding: 20px;
-          padding-bottom: 50px;
-          min-height: 100vh
-        `
+        style: "padding: 20px; padding-bottom: 50px; min-height: 100vh"
       },
       ...children
     )
